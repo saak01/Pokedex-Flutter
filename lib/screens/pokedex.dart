@@ -3,6 +3,7 @@ import 'package:pokedex/model/pokemons.dart';
 import 'package:pokedex/widget/pokemons_list.dart';
 import 'package:pokedex/api/pokemon_api.dart';
 import 'package:pokedex/providers/pokemon_api_provider.dart';
+import 'package:pokedex/widget/skeleton_card.dart';
 
 class PokedexScreen extends StatefulWidget {
   const PokedexScreen({super.key});
@@ -47,7 +48,7 @@ class _PokedexScreen extends State<PokedexScreen> {
     Widget content = PokemonsList(pokemonsList: pokemons);
 
     if (isLoading) {
-      content = const CircularProgressIndicator();
+      content = const SkeletonCard();
     } else if (error) {
       content = Center(
         child: Padding(
