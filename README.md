@@ -11,7 +11,7 @@ O "Pokedex Flutter" é um aplicativo desenvolvido por mim usando o Flutter frame
 <p>Com o "Pokedex Flutter", você pode mergulhar no incrível mundo dos Pokémons. Explore uma ampla coleção de Pokémons, descubra seus detalhes, habilidades, estatísticas e muito mais. Espero que este aplicativo traga alegria e nostalgia, proporcionando uma experiência envolvente e divertida para todos os entusiastas dos Pokémons.</p>
 
 <img align="center" alt="Pokedex Flutter" height="650" width="300" src="https://i.imgur.com/kQaviYX.png">
-
+<img align="center" alt="Pokedex Flutter" height="650" width="300" src="https://i.imgur.com/x9eBis6.png">
 
 <hr>
 
