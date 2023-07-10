@@ -32,8 +32,23 @@ class _PokedexScreen extends State<PokedexScreen> {
       final List<dynamic> fetchedPokemons =
           await pokemonApiProvider.fetchPokemons();
       setState(() {
+        const kirby = PokemonFromList(
+            name: 'Kirby',
+            types: [
+              {
+                'type': {'name': 'No'}
+              },
+              {
+                'type': {'name': 'Pokemon'}
+              }
+            ],
+            urlSprit:
+                'https://assets.stickpng.com/images/5aafaf817603fc558cffc0a1.png',
+            urlDetails: '');
         pokemons = fetchedPokemons as List<PokemonFromList>;
+        pokemons.add(kirby);
         pokemonsBasedata = pokemons;
+        print(pokemonsBasedata);
         isLoading = false;
       });
     } catch (err) {

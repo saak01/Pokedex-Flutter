@@ -36,6 +36,31 @@ class _PokemonsListState extends State<PokemonsList> {
         itemBuilder: (ctx, index) {
           return InkWell(
             onTap: () async {
+              if (widget.pokemonsList[index].name == 'Kirby') {
+                const kirby = PokemonModel(
+                    name: 'Kirby',
+                    types: [
+                      {
+                        'type': {'name': 'No'}
+                      },
+                      {
+                        'type': {'name': 'Pokemon'}
+                      }
+                    ],
+                    urlSprit:
+                        'https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/3bcda54aa2a73ba8162fd2739d5e4ecb.png',
+                    hp: 8000,
+                    attack: 8000,
+                    defense: 8000,
+                    specialAttack: 8000,
+                    specialDefense: 8000,
+                    speed: 8000);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (ctx) => const PokemonDetail(pokemon: kirby)),
+                );
+              }
               var pokemon =
                   await fetchPokemon(widget.pokemonsList[index].urlDetails);
               Navigator.push(

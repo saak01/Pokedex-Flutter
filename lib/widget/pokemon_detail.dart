@@ -15,6 +15,20 @@ class PokemonDetailWidget extends StatefulWidget {
 class _PokemonDetailWidgetState extends State<PokemonDetailWidget> {
   @override
   Widget build(BuildContext context) {
+    Widget image = Image.network(
+      widget.pokemon.urlSprit,
+    );
+
+    if (widget.pokemon.name == "Kirby") {
+      print('-' * 20);
+      image = SizedBox(
+          width: 80,
+          height: 80,
+          child: Image.network(
+            widget.pokemon.urlSprit,
+          ));
+    }
+
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         final double fullWidth = constraints.maxWidth;
@@ -37,12 +51,7 @@ class _PokemonDetailWidgetState extends State<PokemonDetailWidget> {
                 children: [
                   Positioned(
                     right: 30,
-                    child: Transform.scale(
-                      scale: 2.0,
-                      child: Image.network(
-                        widget.pokemon.urlSprit,
-                      ),
-                    ),
+                    child: Transform.scale(scale: 2.0, child: image),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 50),
