@@ -22,7 +22,7 @@ O "Pokedex Flutter" é um aplicativo desenvolvido por mim usando o Flutter frame
 <p>Certifique-se de ter o Flutter SDK instalado em sua máquina. Caso ainda não tenha, siga as instruções de instalação na <a href="https://flutter.dev/docs/get-started" target="_blank">documentação oficial do Flutter</a>.</p>
 
 <h3>Clone o Repositório</h3>
-<pre><code>git clone https://github.com/seu-usuario/pokedex-flutter.git</code></pre>
+<pre><code>git clone https://github.com/saak01/Pokedex-Flutter.git</code></pre>
 
 <h3>Atualize as Dependências</h3>
 <p>No diretório raiz do projeto, execute o seguinte comando para obter todas as dependências necessárias:</p>
